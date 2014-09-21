@@ -39,7 +39,7 @@
 #define ___CHARDET_H___
 
 #ifdef _WIN32
-#   ifdef DLL_EXPORTS
+#   ifdef BUILD_CHARDET_LIB
 #	define CHARDET_IMEXPORT extern _declspec(dllexport)
 #   else
 #	define CHARDET_IMEXPORT extern _declspec(dllimport)
