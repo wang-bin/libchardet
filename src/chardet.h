@@ -38,6 +38,9 @@
 #ifndef ___CHARDET_H___
 #define ___CHARDET_H___
 
+#ifdef BUILD_CHARDET_STATIC
+#define CHARDET_IMEXPORT
+#else
 #ifdef _WIN32
 #   ifdef BUILD_CHARDET_LIB
 #	define CHARDET_IMEXPORT extern _declspec(dllexport)
@@ -46,7 +49,8 @@
 #   endif
 #else
 #   define CHARDET_IMEXPORT extern __attribute__ ((visibility("default")))
-#endif
+#endif //_WIN32
+#endif //BUILD_CHARDET_STATIC
 
 #include <stddef.h>
 

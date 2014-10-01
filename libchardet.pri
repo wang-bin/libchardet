@@ -33,7 +33,6 @@ SOURCES = \
     $$PWD/src/nsLatin1Prober.cpp \
     $$PWD/src/nsEscSM.cpp \
     $$PWD/src/nsUTF8Prober.cpp \
-    $$PWD/src/chardetor.cpp \
     $$PWD/src/entry/impl.cpp \
     $$PWD/src/nsBig5Prober.cpp \
     $$PWD/src/LangBulgarianModel.cpp \
